@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RainNenya</title>
+  
+  <subtitle>OUR OWN HEAVEN</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://RainNenya.github.io/"/>
+  <updated>2019-08-02T13:29:00.882Z</updated>
+  <id>http://RainNenya.github.io/</id>
+  
+  <author>
+    <name>Percy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://RainNenya.github.io/2019/08/02/test/"/>
+    <id>http://RainNenya.github.io/2019/08/02/test/</id>
+    <published>2019-08-02T13:08:02.000Z</published>
+    <updated>2019-08-02T13:29:00.882Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
