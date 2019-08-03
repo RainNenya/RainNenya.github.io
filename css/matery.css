@@ -1768,7 +1768,7 @@ footer .copy-right {
 /* create the ... style */
 .block-with-text:before {
     /* points in the end */
-    content: '...';
+    /*content: '...';*/
     /* absolute position */
     position: absolute;
     /* set position to right bottom corner of block */

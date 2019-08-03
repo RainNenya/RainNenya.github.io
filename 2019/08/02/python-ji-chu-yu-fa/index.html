@@ -4,8 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="test, RainNenya">
-    <meta name="description" content="test | RainNenya">
+    <meta name="keywords" content="Python 基础语法, RainNenya">
+    <meta name="description" content="标识符什么是标识符
+标识符（identifier）是指用来标识某个实体的一个符号，在不同的应用环境下有不同的含义。在计算机编程语言中，标识符是用户编程时使用的名字，用于给变量、常量、函数、语句块等命名，以建立起名称与使用之间的关系。
+
+标识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>test | RainNenya</title>
+    <title>Python 基础语法 | RainNenya</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -239,13 +242,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        test
+                        Python 基础语法
                     </div>
                 </div>
             </div>
@@ -354,12 +357,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python/" target="_blank">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/后端/" class="post-category" target="_blank">
+                                后端
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -374,14 +390,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        838
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -397,7 +413,115 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><h4 id="什么是标识符"><a href="#什么是标识符" class="headerlink" title="什么是标识符"></a>什么是标识符</h4><blockquote>
+<p><em>标识符（identifier）</em>是指<strong>用来标识某个实体的一个符号</strong>，在不同的应用环境下有不同的含义。在计算机编程语言中，标识符是用户编程时使用的名字，用于给变量、常量、函数、语句块等命名，以建立起名称与使用之间的关系。</p>
+</blockquote>
+<h4 id="标识符规则"><a href="#标识符规则" class="headerlink" title="标识符规则"></a>标识符规则</h4><p>标识符由字母、数字、下划线组成。</p>
+<p>所有标识符可以包括英文、数字以及下划线（_），但不能以数字开头。</p>
+<p>标识符对大小写敏感。</p>
+<pre class=" language-python"><code class="language-python">hello_110 <span class="token operator">=</span> <span class="token number">0</span>
+
+_110hello <span class="token operator">=</span> <span class="token number">0</span>
+
+110_hello <span class="token operator">=</span> <span class="token number">0</span>
+  File <span class="token string">"&lt;ipython-input-7-98d382705aaa>"</span><span class="token punctuation">,</span> line <span class="token number">1</span>
+    110_hello <span class="token operator">=</span> <span class="token number">0</span>
+       <span class="token operator">^</span>
+SyntaxError<span class="token punctuation">:</span> invalid token
+</code></pre>
+<h3 id="保留字"><a href="#保留字" class="headerlink" title="保留字"></a>保留字</h3><h4 id="什么是保留字"><a href="#什么是保留字" class="headerlink" title="什么是保留字"></a>什么是保留字</h4><blockquote>
+<p><em>保留字(reserved word)</em>，指在高级语言中已经定义过的字，使用者不能再将这些字作为变量名或过程名使用。</p>
+</blockquote>
+<p><strong>保留字就是关键字。</strong></p>
+<h4 id="如何查看关键字"><a href="#如何查看关键字" class="headerlink" title="如何查看关键字"></a>如何查看关键字</h4><blockquote>
+<p>Python中有一个模块叫keyword，keyword中有两个成员：iskeyword 函数和 kwlist 列表（<strong>all</strong> = [“iskeyword”, “kwlist”]）。</p>
+<p>其中kwlist中包含了所有的关键字，而iskeyword则用来查看某一个字符串是否是关键字。</p>
+</blockquote>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> keyword
+
+keyword<span class="token punctuation">.</span>kwlist
+Out<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> 
+<span class="token punctuation">[</span><span class="token string">'False'</span><span class="token punctuation">,</span><span class="token string">'None'</span><span class="token punctuation">,</span><span class="token string">'True'</span><span class="token punctuation">,</span><span class="token string">'and'</span><span class="token punctuation">,</span><span class="token string">'as'</span><span class="token punctuation">,</span><span class="token string">'assert'</span><span class="token punctuation">,</span><span class="token string">'async'</span><span class="token punctuation">,</span><span class="token string">'await'</span><span class="token punctuation">,</span><span class="token string">'break'</span><span class="token punctuation">,</span><span class="token string">'class'</span><span class="token punctuation">,</span><span class="token string">'continue'</span><span class="token punctuation">,</span><span class="token string">'def'</span><span class="token punctuation">,</span><span class="token string">'del'</span><span class="token punctuation">,</span><span class="token string">'elif'</span><span class="token punctuation">,</span><span class="token string">'else'</span><span class="token punctuation">,</span><span class="token string">'except'</span><span class="token punctuation">,</span><span class="token string">'finally'</span><span class="token punctuation">,</span><span class="token string">'for'</span><span class="token punctuation">,</span><span class="token string">'from'</span><span class="token punctuation">,</span><span class="token string">'global'</span><span class="token punctuation">,</span><span class="token string">'if'</span><span class="token punctuation">,</span><span class="token string">'import'</span><span class="token punctuation">,</span><span class="token string">'in'</span><span class="token punctuation">,</span><span class="token string">'is'</span><span class="token punctuation">,</span><span class="token string">'lambda'</span><span class="token punctuation">,</span><span class="token string">'nonlocal'</span><span class="token punctuation">,</span><span class="token string">'not'</span><span class="token punctuation">,</span><span class="token string">'or'</span><span class="token punctuation">,</span><span class="token string">'pass'</span><span class="token punctuation">,</span><span class="token string">'raise'</span><span class="token punctuation">,</span><span class="token string">'return'</span><span class="token punctuation">,</span><span class="token string">'try'</span><span class="token punctuation">,</span><span class="token string">'while'</span><span class="token punctuation">,</span><span class="token string">'with'</span><span class="token punctuation">,</span><span class="token string">'yield'</span><span class="token punctuation">]</span>
+
+keyword<span class="token punctuation">.</span>iskeyword<span class="token punctuation">(</span><span class="token string">"int"</span><span class="token punctuation">)</span>
+Out<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token boolean">False</span>
+
+keyword<span class="token punctuation">.</span>iskeyword<span class="token punctuation">(</span><span class="token string">"is"</span><span class="token punctuation">)</span>
+Out<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token boolean">True</span>
+</code></pre>
+<h3 id="行与缩进"><a href="#行与缩进" class="headerlink" title="行与缩进"></a>行与缩进</h3><blockquote>
+<p>Python 最具特色的就是使用缩进来表示代码块，不需要使用大括号 <strong>{}</strong> 来控制类，函数以及其他逻辑判断。缩进的空格数是可变的，但是<strong>同一个代码块的语句必须包含相同的缩进空格数。</strong></p>
+</blockquote>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">if</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"true"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"false"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#正常        </span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">if</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"true"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"false"</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#IndentationError: unindent does not match any outer indentation level</span>
+</code></pre>
+<p><code>IndentationError: unindent does not match any outer indentation level</code>错误表明，你使用的缩进方式不一致，有的是 tab 键缩进，有的是空格缩进，改为一致即可。</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">if</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"true"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"false"</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#IndentationError: unexpected indent</span>
+</code></pre>
+<p><code>IndentationError: unexpected indent</code>错误, 则 Python 编译器是在告诉你你的文件里格式不对了，可能是tab和空格没对齐的问题，所有 Python 对格式要求非常严格。</p>
+<h3 id="多行语句"><a href="#多行语句" class="headerlink" title="多行语句"></a>多行语句</h3><p>Python 通常是一行写完一条语句，但如果语句很长，我们可以使用反斜杠()来实现多行语句。</p>
+<pre class=" language-python"><code class="language-python">number <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> \
+<span class="token number">2</span> <span class="token operator">+</span> \
+<span class="token number">3</span>
+
+number
+Out<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">6</span>
+</code></pre>
+<p>语句中包含 [], {} 或 () 括号就不需要使用多行连接符。</p>
+<pre class=" language-python"><code class="language-python">days <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Monday'</span><span class="token punctuation">,</span> <span class="token string">'Tuesday'</span><span class="token punctuation">,</span> <span class="token string">'Wednesday'</span><span class="token punctuation">,</span>
+        <span class="token string">'Thursday'</span><span class="token punctuation">,</span> <span class="token string">'Friday'</span><span class="token punctuation">]</span>
+
+days
+Out<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Monday'</span><span class="token punctuation">,</span> <span class="token string">'Tuesday'</span><span class="token punctuation">,</span> <span class="token string">'Wednesday'</span><span class="token punctuation">,</span> <span class="token string">'Thursday'</span><span class="token punctuation">,</span> <span class="token string">'Friday'</span><span class="token punctuation">]</span>
+</code></pre>
+<h3 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h3><blockquote>
+<p>Python 可以使用引号( <strong>‘</strong> )、双引号( <strong>“</strong> )、三引号( <strong>‘’’</strong> 或 <strong>“””</strong> ) 来表示字符串，引号的开始与结束必须的相同类型的。其中三引号可以由多行组成，编写多行文本的快捷语法，常用于文档字符串，在文件的特定地点，被当做注释。</p>
+</blockquote>
+<pre class=" language-python"><code class="language-python">string1 <span class="token operator">=</span> <span class="token string">'hello'</span>
+string2 <span class="token operator">=</span> <span class="token string">"world"</span>
+string3 <span class="token operator">=</span> <span class="token triple-quoted-string string">"""hello
+world"""</span>
+
+string4 <span class="token operator">=</span> 'hello"
+  File <span class="token string">"&lt;ipython-input-50-490b69049501>"</span><span class="token punctuation">,</span> line <span class="token number">1</span>
+    string4 <span class="token operator">=</span> 'hello"
+                     <span class="token operator">^</span>
+SyntaxError<span class="token punctuation">:</span> EOL <span class="token keyword">while</span> scanning string literal
+</code></pre>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>Python 中单行注释采用 # 开头。</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#这是第一个注释</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#这是第二个注释</span>
+
+<span class="token triple-quoted-string string">'''
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+'''</span>
+
+<span class="token triple-quoted-string string">"""
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+"""</span>
+</code></pre>
+
             </div>
             <hr>
 
@@ -552,9 +676,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《test》
+                    《Python 基础语法》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/02/test/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/02/python-ji-chu-yu-fa/" property="cc:attributionName" rel="cc:attributionURL">
                 Percy
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -598,19 +722,19 @@
                 <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2019/08/02/test/">
+                <a href="/2019/08/02/python-ji-chu-yu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Python 基础语法">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">Python 基础语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hahaha
+                            学习一门开发语言首先当然是要熟悉它的语法了，Python的语法还算是比较简单的，这里从基础的开始了解一下。
                         
                     </div>
                     <div class="publish-info">
@@ -619,13 +743,25 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Percy
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/后端/" class="post-category" target="_blank">
+                                    后端
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/" target="_blank">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -636,19 +772,19 @@
                 本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/02/test/">
+                <a href="/2019/08/02/python-ji-chu-yu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Python 基础语法">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">Python 基础语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hahaha
+                            学习一门开发语言首先当然是要熟悉它的语法了，Python的语法还算是比较简单的，这里从基础的开始了解一下。
                         
                     </div>
                     <div class="publish-info">
@@ -657,13 +793,25 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Percy
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/后端/" class="post-category" target="_blank">
+                                    后端
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/" target="_blank">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -781,7 +929,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">0</span>
+                <span class="white-color">838</span>
             
 
             

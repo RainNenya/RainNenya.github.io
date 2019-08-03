@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://RainNenya.github.io/"/>
-  <updated>2019-08-02T13:29:00.882Z</updated>
+  <updated>2019-08-03T09:56:45.754Z</updated>
   <id>http://RainNenya.github.io/</id>
   
   <author>
@@ -17,16 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://RainNenya.github.io/2019/08/02/test/"/>
-    <id>http://RainNenya.github.io/2019/08/02/test/</id>
+    <title>Python 基础语法</title>
+    <link href="http://RainNenya.github.io/2019/08/02/python-ji-chu-yu-fa/"/>
+    <id>http://RainNenya.github.io/2019/08/02/python-ji-chu-yu-fa/</id>
     <published>2019-08-02T13:08:02.000Z</published>
-    <updated>2019-08-02T13:29:00.882Z</updated>
+    <updated>2019-08-03T09:56:45.754Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h3 id=&quot;标识符&quot;&gt;&lt;a href=&quot;#标识符&quot; class=&quot;headerlink&quot; title=&quot;标识符&quot;&gt;&lt;/a&gt;标识符&lt;/h3&gt;&lt;h4 id=&quot;什么是标识符&quot;&gt;&lt;a href=&quot;#什么是标识符&quot; class=&quot;headerlink&quot;
+        
+      
+    
     </summary>
     
+      <category term="后端" scheme="http://RainNenya.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Python" scheme="http://RainNenya.github.io/tags/Python/"/>
     
   </entry>
   
