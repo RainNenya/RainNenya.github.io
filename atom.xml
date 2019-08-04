@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://RainNenya.github.io/"/>
-  <updated>2019-08-04T03:13:16.288Z</updated>
+  <updated>2019-08-04T07:35:35.515Z</updated>
   <id>http://RainNenya.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python3 基本数据类型</title>
+    <link href="http://RainNenya.github.io/2019/08/04/python3-ji-ben-shu-ju-lei-xing/"/>
+    <id>http://RainNenya.github.io/2019/08/04/python3-ji-ben-shu-ju-lei-xing/</id>
+    <published>2019-08-04T06:43:57.000Z</published>
+    <updated>2019-08-04T07:35:35.515Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;数据类型概述&quot;&gt;&lt;a href=&quot;#数据类型概述&quot; class=&quot;headerlink&quot; title=&quot;数据类型概述&quot;&gt;&lt;/a&gt;数据类型概述&lt;/h3&gt;&lt;h4 id=&quot;标准数据类型&quot;&gt;&lt;a href=&quot;#标准数据类型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://RainNenya.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Python" scheme="http://RainNenya.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python3 基础语法(下)</title>
