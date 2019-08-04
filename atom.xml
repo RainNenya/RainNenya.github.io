@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://RainNenya.github.io/"/>
-  <updated>2019-08-03T09:56:45.754Z</updated>
+  <updated>2019-08-04T03:13:16.288Z</updated>
   <id>http://RainNenya.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Python 基础语法</title>
-    <link href="http://RainNenya.github.io/2019/08/02/python-ji-chu-yu-fa/"/>
-    <id>http://RainNenya.github.io/2019/08/02/python-ji-chu-yu-fa/</id>
+    <title>Python3 基础语法(下)</title>
+    <link href="http://RainNenya.github.io/2019/08/04/python3-ji-chu-yu-fa-xia/"/>
+    <id>http://RainNenya.github.io/2019/08/04/python3-ji-chu-yu-fa-xia/</id>
+    <published>2019-08-04T01:16:55.000Z</published>
+    <updated>2019-08-04T03:13:16.288Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;输入输出&quot;&gt;&lt;a href=&quot;#输入输出&quot; class=&quot;headerlink&quot; title=&quot;输入输出&quot;&gt;&lt;/a&gt;输入输出&lt;/h3&gt;&lt;h4 id=&quot;input-输入&quot;&gt;&lt;a href=&quot;#input-输入&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://RainNenya.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Python" scheme="http://RainNenya.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python3 基础语法（上）</title>
+    <link href="http://RainNenya.github.io/2019/08/02/python3-ji-chu-yu-fa-shang/"/>
+    <id>http://RainNenya.github.io/2019/08/02/python3-ji-chu-yu-fa-shang/</id>
     <published>2019-08-02T13:08:02.000Z</published>
-    <updated>2019-08-03T09:56:45.754Z</updated>
+    <updated>2019-08-04T02:25:14.970Z</updated>
     
     <summary type="html">
     
