@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://RainNenya.github.io/"/>
-  <updated>2019-08-25T10:52:56.217Z</updated>
+  <updated>2019-08-31T06:51:58.740Z</updated>
   <id>http://RainNenya.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fiddler 面板功能详解</title>
+    <link href="http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/"/>
+    <id>http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/</id>
+    <published>2019-08-30T13:01:37.000Z</published>
+    <updated>2019-08-31T06:51:58.740Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Browser.png&quot; alt=&quot;Any Browser&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://RainNenya.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Fiddler" scheme="http://RainNenya.github.io/tags/Fiddler/"/>
+    
+  </entry>
   
   <entry>
     <title>Python3 面向对象</title>

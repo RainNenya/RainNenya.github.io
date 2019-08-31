@@ -4,15 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Python3 基础语法(下), RainNenya">
-    <meta name="description" content="输入输出input 输入
-使用 input，执行程序后程序会等待用户输入
+    <meta name="keywords" content="Fiddler 面板功能详解, RainNenya">
+    <meta name="description" content="
 
-# input 输入的都是字符串
-weight = input(&#34;please input your weight:&#34;)
-weight
 
-please input ">
+Fiddler简介
+Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一,它能够记录客户端和服务器之间的所有 HTTP请求，是web调试的利器。既然是代理，也就是说：客户端的所有请求都要先经过Fid">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ please input ">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python3 基础语法(下) | RainNenya</title>
+    <title>Fiddler 面板功能详解 | RainNenya</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -246,13 +243,13 @@ please input ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Telerik Fiddler.png')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Python3 基础语法(下)
+                        Fiddler 面板功能详解
                     </div>
                 </div>
             </div>
@@ -363,8 +360,8 @@ please input ">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/" target="_blank">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/Fiddler/" target="_blank">
+                                <span class="chip bg-color">Fiddler</span>
                             </a>
                         
                     </div>
@@ -375,8 +372,8 @@ please input ">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/后端/" class="post-category" target="_blank">
-                                后端
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                工具
                             </a>
                         
                     </div>
@@ -387,14 +384,14 @@ please input ">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-04
+                    2019-08-30
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        553
+                        809
                     </div>
                     
 
@@ -417,145 +414,63 @@ please input ">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="input-输入"><a href="#input-输入" class="headerlink" title="input 输入"></a>input 输入</h4><blockquote>
-<p>使用 input，执行程序后程序会等待用户输入</p>
+                <p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Browser.png" alt="Any Browser"></p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any System.png" alt="Any System"></p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Platform.png" alt="Any Platform"></p>
+<h3 id="Fiddler简介"><a href="#Fiddler简介" class="headerlink" title="Fiddler简介"></a>Fiddler简介</h3><blockquote>
+<p>Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一,它能够记录客户端和服务器之间的所有 HTTP请求，是web调试的利器。既然是代理，也就是说：客户端的所有请求都要先经过Fiddler，然后转发到相应的服务器，反之，服务器端的所有响应，也都会先经过Fiddler然后发送到客户端。</p>
 </blockquote>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># input 输入的都是字符串</span>
-weight <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"please input your weight:"</span><span class="token punctuation">)</span>
-weight
-</code></pre>
-<p>please input your weight:62.5</p>
-<p>‘62.5’</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 利用float函数将字符串转化成浮点数</span>
-weight <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"please input your weight:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-weight
-</code></pre>
-<p>please input your weight:62.5</p>
-<p>62.5</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 利用eval函数将输入的字符串作为表达式进行计算</span>
-age <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"please input your age:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-age
-</code></pre>
-<p>please input your age:2018-1999</p>
-<p>19</p>
-<h4 id="print-输出"><a href="#print-输出" class="headerlink" title="print 输出"></a>print 输出</h4><blockquote>
-<p>print 默认输出是换行的，如果要实现不换行需要在变量末尾加上 <strong>end=””</strong></p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工作原理.png" alt="Fiddler工作原理"></p>
+<h3 id="面版总览"><a href="#面版总览" class="headerlink" title="面版总览"></a>面版总览</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler面板.png" alt="Fiddler面板"></p>
+<h3 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h3><blockquote>
+<p>Fiddler菜单栏，包括捕获http请求，停止捕获请求，保存http请求，载入本地session、设置捕获规则等功能。</p>
 </blockquote>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 输出用print</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'your weight is:'</span><span class="token punctuation">,</span>weight<span class="token punctuation">)</span>
-</code></pre>
-<p>your weight is: 62.5</p>
-<h3 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h3><blockquote>
-<p>在 Python 用 <code>import</code> 或者 <code>from...import</code> 来导入相应的模块。</p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/HTTPS通信设置.png" alt="HTTPS通信设置"></p>
+<h3 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h3><blockquote>
+<p>Fiddler的工具栏，包括Fiddler针对当前view的操作（暂停，清除session,decode模式、清除缓存等）。</p>
 </blockquote>
-<ul>
-<li>将整个模块导入</li>
-</ul>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">### 以普通方式导入</span>
-<span class="token keyword">import</span> datetime
-datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<p>datetime.datetime(2019, 8, 4, 8, 47, 32, 247842)</p>
-<ul>
-<li>从某个模块中导入某个函数</li>
-</ul>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">### 导入模块中某个对象</span>
-<span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
-datetime<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<p>datetime.datetime(2019, 8, 4, 8, 48, 52, 171114)</p>
-<ul>
-<li>将某个模块中的全部函数导入</li>
-</ul>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">### 导入模块中全部对象</span>
-<span class="token keyword">from</span> datetime <span class="token keyword">import</span> <span class="token operator">*</span>
-datetime<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span>
-date<span class="token punctuation">(</span><span class="token number">2018</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-</code></pre>
-<p>datetime.date(2018, 1, 1)</p>
-<ul>
-<li>将整个模块导入并为该模块起个别名</li>
-</ul>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">### 以简写方式导入模块</span>
-<span class="token keyword">import</span> datetime <span class="token keyword">as</span> dt
-dt<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<p>datetime.datetime(2019, 8, 4, 8, 50, 59, 799972)</p>
-<h3 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">运算符</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">+</td>
-<td style="text-align:left">加 - 两个对象相加</td>
-</tr>
-<tr>
-<td style="text-align:left">-</td>
-<td style="text-align:left">减 - 得到负数或是一个数减去另一个数</td>
-</tr>
-<tr>
-<td style="text-align:left">*</td>
-<td style="text-align:left">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
-</tr>
-<tr>
-<td style="text-align:left">/</td>
-<td style="text-align:left">除 - x 除以 y</td>
-</tr>
-<tr>
-<td style="text-align:left">%</td>
-<td style="text-align:left">取模 - 返回除法的余数</td>
-</tr>
-<tr>
-<td style="text-align:left">**</td>
-<td style="text-align:left">幂 - 返回x的y次幂</td>
-</tr>
-<tr>
-<td style="text-align:left">//</td>
-<td style="text-align:left">取整除 - 向下取接近除数的整数</td>
-</tr>
-</tbody>
-</table>
-<h4 id="基本数学运算"><a href="#基本数学运算" class="headerlink" title="基本数学运算"></a>基本数学运算</h4><pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token operator">-</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">5</span><span class="token operator">*</span><span class="token number">2</span> <span class="token comment" spellcheck="true">#四则运算</span>
-Out<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">31</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token operator">**</span><span class="token number">10</span> <span class="token comment" spellcheck="true">#乘方运算</span>
-Out<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1024</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">7</span><span class="token operator">%</span><span class="token number">5</span> <span class="token comment" spellcheck="true">#求余运算</span>
-Out<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">2</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">7</span><span class="token operator">//</span><span class="token number">5</span> <span class="token comment" spellcheck="true">#地板除法</span>
-Out<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1</span>
-</code></pre>
-<h4 id="Math-模块中的函数"><a href="#Math-模块中的函数" class="headerlink" title="Math 模块中的函数"></a>Math 模块中的函数</h4><pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token keyword">import</span> math
-In <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">:</span> math<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>pi<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#三角函数</span>
-Out<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1.0</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">:</span> abs<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#绝对值</span>
-Out<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">:</span> math<span class="token punctuation">.</span>log<span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#对数函数</span>
-Out<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">1.0</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">:</span> math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#阶乘</span>
-Out<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">120</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2j</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">-</span> <span class="token number">1j</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#复数</span>
-
-Out<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">1j</span><span class="token punctuation">)</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">]</span><span class="token punctuation">:</span> complex<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1j</span><span class="token punctuation">)</span>
-
-Out<span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token number">0.6</span><span class="token operator">+</span><span class="token number">0.8j</span><span class="token punctuation">)</span>
-</code></pre>
-<pre class=" language-python"><code class="language-python">In <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">:</span> math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>
-
-Out<span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">402387260077093773543702433923003985719374864210714632543799910429938512398629020592044208486969404800479988610197196058631666872994808558901323829669944590997424504087073759918823627727188732519779505950995276120874975462497043601418278094646496291056393887437886487337119181045825783647849977012476632889835955735432513185323958463075557409114262417474349347553428646576611667797396668820291207379143853719588249808126867838374559731746136085379534524221586593201928090878297308431392844403281231558611036976801357304216168747609675871348312025478589320767169132448426236131412508780208000261683151027341827977704784635868170164365024153691398281264810213092761244896359928705114964975419909342221566832572080821333186116811553615836546984046708975602900950537616475847728421889679646244945160765353408198901385442487984959953319101723355556602139450399736280750137837615307127761926849034352625200015888535147331611702103968175921510907788019393178114194545257223865541461062892187960223838971476088506276862967146674697562911234082439208160153780889893964518263243671616762179168909779911903754031274622289988005195444414282012187361745992642956581746628302955570299024324153181617210465832036786906117260158783520751516284225540265170483304226143974286933061690897968482590125458327168226458066526769958652682272807075781391858178889652208164348344825993266043367660176999612831860788386150279465955131156552036093988180612138558600301435694527224206344631797460594682573103790084024432438465657245014402821885252470935190620929023136493273497565513958720559654228749774011413346962715422845862377387538230483865688976461927383814900140767310446640259899490222221765904339901886018566526485061799702356193897017860040811889729918311021171229845901641921068884387121855646124960798722908519296819372388642614839657382291123125024186649353143970137428531926649875337218940694281434118520158014123344828015051399694290153483077644569099073152433278288269864602789864321139083506217095002597389863554277196742822248757586765752344220207573630569498825087968928162753848863396909959826280956121450994871701244516461260379029309120889086942028510640182154399457156805941872748998094254742173582401063677404595741785160829230135358081840096996372524230560855903700624271243416909004153690105933983835777939410970027753472000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</span>
-</code></pre>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工具条功能.png" alt="工具条功能"></p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工具栏说明.png" alt="工具栏说明"></p>
+<h3 id="会话面板"><a href="#会话面板" class="headerlink" title="会话面板"></a>会话面板</h3><blockquote>
+<p>Web Session面板，主要是Fiddler抓取到的每条http请求（每一条称为一个session）,主要包含了请求的url，协议，状态码，body等信息。</p>
+</blockquote>
+<h4 id="会话面板属性"><a href="#会话面板属性" class="headerlink" title="会话面板属性"></a>会话面板属性</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler会话面板属性.png" alt="会话面板属性"></p>
+<h4 id="会话图标v4-x"><a href="#会话图标v4-x" class="headerlink" title="会话图标v4.x"></a>会话图标v4.x</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/会话面板图标说明4.png" alt="会话面板图标说明4"></p>
+<h4 id="会话图标v5-x"><a href="#会话图标v5-x" class="headerlink" title="会话图标v5.x"></a>会话图标v5.x</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/会话面板图标说明5.png" alt="会话面板图标说明5"></p>
+<h3 id="监控面板"><a href="#监控面板" class="headerlink" title="监控面板"></a>监控面板</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler监控面板使用.png" alt="监控面板的使用"></p>
+<h4 id="Statistics"><a href="#Statistics" class="headerlink" title="Statistics"></a>Statistics</h4><blockquote>
+<p>HTTP请求的性能和其他数据分析</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Statistics面板.png" alt="Statistics面板"></p>
+<p>我们可以从中看出一些基本性能数据：如DNS解析的时间消耗是8ms,建立TCP/IP连接的时间消耗是8ms等等信息。</p>
+<h4 id="inspector"><a href="#inspector" class="headerlink" title="inspector"></a>inspector</h4><blockquote>
+<p>提供headers、textview、hexview,Raw等多种方式查看单条http请求的请求报文的信息,分为上下两个部分，上半部分是请求头部分，下半部分是响应头部分。对于每一部分，提供了多种不同格式查看每个请求和响应的内容。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/inspector面板.png" alt="inspector面板"></p>
+<p><strong>ImageView标签</strong> </p>
+<p>JPG 格式使用 ImageView 就可以看到图片。选择一条Content-Type是image/jpeg的会话话,点击ImageView。</p>
+<p><strong>TextView 标签</strong></p>
+<p>HTML/JS/CSS 使用 TextView 可以看到响应的内容。选择一条Content-Type是text/html的回话,点击TextView。</p>
+<p><strong>Raw标签</strong></p>
+<p>Raw标签可以查看响应报文和响应正文,但是不包含请求报文。</p>
+<p><strong>Auth标签</strong></p>
+<p>Auth则可以查看授权Proxy-Authorization 和 Authorization的相关信息。</p>
+<p><strong>Cookies标签</strong></p>
+<p>Cookies标签可以看到请求的cookie和响应的set-cookie头信息。</p>
+<h4 id="AutoResponder"><a href="#AutoResponder" class="headerlink" title="AutoResponder"></a>AutoResponder</h4><blockquote>
+<p>Fiddler比较重要且比较强大的功能之一。可用于拦截某一请求，并重定向到本地的资源，或者使用Fiddler的内置响应。可用于调试服务器端代码而无需修改服务器端的代码和配置，因为拦截和重定向后，实际上访问的是本地的文件或者得到的是Fiddler的内置响应。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/AutoResponder标签.png" alt="AutoResponder标签"></p>
+<h4 id="composer"><a href="#composer" class="headerlink" title="composer"></a>composer</h4><blockquote>
+<p>可以模拟向相应的服务器发送数据的过程（不错，这就是灌水机器人的基本原理,也可以是部分http flood的一种方式）。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/composer面板.png" alt="composer面板"></p>
+<h4 id="Filters"><a href="#Filters" class="headerlink" title="Filters"></a>Filters</h4><blockquote>
+<p>Filter标签则可以设置Fiddler的过滤规则，来达到过滤http请求的目的。最简单如：过滤内网http请求而只抓取internet的http请求，或则过滤相应域名的http请求。Fiddler的过滤器非常强大，可以过滤特定http状态码的请求，可以过滤特定请求类型的http请求（如css请求，image请求，js请求等），可以过滤请求报文大于或则小于指定大小（byte）的请求。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Filters面板.png" alt="Filters面板"></p>
+<h3 id="状态面板"><a href="#状态面板" class="headerlink" title="状态面板"></a>状态面板</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler状态栏操作.png" alt="状态栏操作"></p>
+<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler的内置命令.png" alt="Fiddler的内置命令"></p>
 
             </div>
             <hr>
@@ -711,9 +626,9 @@ Out<span class="token punctuation">[</span><span class="token number">12</span><
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《Python3 基础语法(下)》
+                    《Fiddler 面板功能详解》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/04/python3-ji-chu-yu-fa-xia/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/" property="cc:attributionName" rel="cc:attributionURL">
                 Percy
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -754,44 +669,45 @@ Out<span class="token punctuation">[</span><span class="token number">12</span><
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/08/04/python3-ji-ben-shu-ju-lei-xing/">
+                <a href="/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Telerik Fiddler.png" class="responsive-img" alt="Fiddler 面板功能详解">
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Python3 基本数据类型">
-                        
-                        <span class="card-title">Python3 基本数据类型</span>
+                        <span class="card-title">Fiddler 面板功能详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            现在开始学习 Python3 的基础数据类型，包括：列表、字典、字符串、元组、集合（List, Dictionary,  String, Tuple, Set）。
+                            Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一,它能够记录客户端和服务器之间的所有 HTTP请求。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/后端/" class="post-category" target="_blank">
-                                    后端
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/" target="_blank">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/Fiddler/" target="_blank">
+                        <span class="chip bg-color">Fiddler</span>
                     </a>
                     
                 </div>
@@ -805,24 +721,24 @@ Out<span class="token punctuation">[</span><span class="token number">12</span><
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/02/python3-ji-chu-yu-fa-shang/">
+                <a href="/2019/08/25/python3-mian-xiang-dui-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Python3 基础语法（上）">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Python3 面向对象">
                         
-                        <span class="card-title">Python3 基础语法（上）</span>
+                        <span class="card-title">Python3 面向对象</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习一门开发语言首先当然是要熟悉它的语法了，Python的语法还算是比较简单的，这里从基础的开始了解一下。
+                            Python 从设计之初就已经是一门面向对象的语言，本次学习 Python 面向对象的相关知识以及 Python 中模块的使用。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-25
                             </span>
                         <span class="publish-author">
                             

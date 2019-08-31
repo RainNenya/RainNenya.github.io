@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Fiddler 面板功能详解</title>
+      <link href="/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/"/>
+      <url>/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Browser.png" alt="Any Browser"></p><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any System.png" alt="Any System"></p><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Platform.png" alt="Any Platform"></p><h3 id="Fiddler简介"><a href="#Fiddler简介" class="headerlink" title="Fiddler简介"></a>Fiddler简介</h3><blockquote><p>Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一,它能够记录客户端和服务器之间的所有 HTTP请求，是web调试的利器。既然是代理，也就是说：客户端的所有请求都要先经过Fiddler，然后转发到相应的服务器，反之，服务器端的所有响应，也都会先经过Fiddler然后发送到客户端。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工作原理.png" alt="Fiddler工作原理"></p><h3 id="面版总览"><a href="#面版总览" class="headerlink" title="面版总览"></a>面版总览</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler面板.png" alt="Fiddler面板"></p><h3 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h3><blockquote><p>Fiddler菜单栏，包括捕获http请求，停止捕获请求，保存http请求，载入本地session、设置捕获规则等功能。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/HTTPS通信设置.png" alt="HTTPS通信设置"></p><h3 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h3><blockquote><p>Fiddler的工具栏，包括Fiddler针对当前view的操作（暂停，清除session,decode模式、清除缓存等）。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工具条功能.png" alt="工具条功能"></p><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler工具栏说明.png" alt="工具栏说明"></p><h3 id="会话面板"><a href="#会话面板" class="headerlink" title="会话面板"></a>会话面板</h3><blockquote><p>Web Session面板，主要是Fiddler抓取到的每条http请求（每一条称为一个session）,主要包含了请求的url，协议，状态码，body等信息。</p></blockquote><h4 id="会话面板属性"><a href="#会话面板属性" class="headerlink" title="会话面板属性"></a>会话面板属性</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler会话面板属性.png" alt="会话面板属性"></p><h4 id="会话图标v4-x"><a href="#会话图标v4-x" class="headerlink" title="会话图标v4.x"></a>会话图标v4.x</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/会话面板图标说明4.png" alt="会话面板图标说明4"></p><h4 id="会话图标v5-x"><a href="#会话图标v5-x" class="headerlink" title="会话图标v5.x"></a>会话图标v5.x</h4><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/会话面板图标说明5.png" alt="会话面板图标说明5"></p><h3 id="监控面板"><a href="#监控面板" class="headerlink" title="监控面板"></a>监控面板</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler监控面板使用.png" alt="监控面板的使用"></p><h4 id="Statistics"><a href="#Statistics" class="headerlink" title="Statistics"></a>Statistics</h4><blockquote><p>HTTP请求的性能和其他数据分析</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Statistics面板.png" alt="Statistics面板"></p><p>我们可以从中看出一些基本性能数据：如DNS解析的时间消耗是8ms,建立TCP/IP连接的时间消耗是8ms等等信息。</p><h4 id="inspector"><a href="#inspector" class="headerlink" title="inspector"></a>inspector</h4><blockquote><p>提供headers、textview、hexview,Raw等多种方式查看单条http请求的请求报文的信息,分为上下两个部分，上半部分是请求头部分，下半部分是响应头部分。对于每一部分，提供了多种不同格式查看每个请求和响应的内容。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/inspector面板.png" alt="inspector面板"></p><p><strong>ImageView标签</strong> </p><p>JPG 格式使用 ImageView 就可以看到图片。选择一条Content-Type是image/jpeg的会话话,点击ImageView。</p><p><strong>TextView 标签</strong></p><p>HTML/JS/CSS 使用 TextView 可以看到响应的内容。选择一条Content-Type是text/html的回话,点击TextView。</p><p><strong>Raw标签</strong></p><p>Raw标签可以查看响应报文和响应正文,但是不包含请求报文。</p><p><strong>Auth标签</strong></p><p>Auth则可以查看授权Proxy-Authorization 和 Authorization的相关信息。</p><p><strong>Cookies标签</strong></p><p>Cookies标签可以看到请求的cookie和响应的set-cookie头信息。</p><h4 id="AutoResponder"><a href="#AutoResponder" class="headerlink" title="AutoResponder"></a>AutoResponder</h4><blockquote><p>Fiddler比较重要且比较强大的功能之一。可用于拦截某一请求，并重定向到本地的资源，或者使用Fiddler的内置响应。可用于调试服务器端代码而无需修改服务器端的代码和配置，因为拦截和重定向后，实际上访问的是本地的文件或者得到的是Fiddler的内置响应。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/AutoResponder标签.png" alt="AutoResponder标签"></p><h4 id="composer"><a href="#composer" class="headerlink" title="composer"></a>composer</h4><blockquote><p>可以模拟向相应的服务器发送数据的过程（不错，这就是灌水机器人的基本原理,也可以是部分http flood的一种方式）。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/composer面板.png" alt="composer面板"></p><h4 id="Filters"><a href="#Filters" class="headerlink" title="Filters"></a>Filters</h4><blockquote><p>Filter标签则可以设置Fiddler的过滤规则，来达到过滤http请求的目的。最简单如：过滤内网http请求而只抓取internet的http请求，或则过滤相应域名的http请求。Fiddler的过滤器非常强大，可以过滤特定http状态码的请求，可以过滤特定请求类型的http请求（如css请求，image请求，js请求等），可以过滤请求报文大于或则小于指定大小（byte）的请求。</p></blockquote><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Filters面板.png" alt="Filters面板"></p><h3 id="状态面板"><a href="#状态面板" class="headerlink" title="状态面板"></a>状态面板</h3><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler状态栏操作.png" alt="状态栏操作"></p><p><img src="https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Fiddler的内置命令.png" alt="Fiddler的内置命令"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Fiddler </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python3 面向对象</title>
       <link href="/2019/08/25/python3-mian-xiang-dui-xiang/"/>
       <url>/2019/08/25/python3-mian-xiang-dui-xiang/</url>
