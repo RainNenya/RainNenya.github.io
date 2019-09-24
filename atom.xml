@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://RainNenya.github.io/"/>
-  <updated>2019-08-31T06:51:58.740Z</updated>
+  <updated>2019-09-24T14:20:45.558Z</updated>
   <id>http://RainNenya.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Fiddler 面板功能详解</title>
-    <link href="http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/"/>
-    <id>http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/</id>
-    <published>2019-08-30T13:01:37.000Z</published>
-    <updated>2019-08-31T06:51:58.740Z</updated>
+    <title>Fiddler小技巧</title>
+    <link href="http://RainNenya.github.io/2019/09/24/fiddler-xiao-ji-qiao/"/>
+    <id>http://RainNenya.github.io/2019/09/24/fiddler-xiao-ji-qiao/</id>
+    <published>2019-09-24T13:55:11.000Z</published>
+    <updated>2019-09-24T14:20:45.558Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,33 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Browser.png&quot; alt=&quot;Any Browser&quot;&gt;&lt;/p&gt;
+          &lt;h3 id=&quot;解压HTTP响应&quot;&gt;&lt;a href=&quot;#解压HTTP响应&quot; class=&quot;headerlink&quot; title=&quot;解压HTTP响应&quot;&gt;&lt;/a&gt;解压HTTP响应&lt;/h3&gt;&lt;p&gt;Fiddler抓包的过程中，我们经常看到HTTP响应是乱码，单击“Response
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://RainNenya.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Fiddler" scheme="http://RainNenya.github.io/tags/Fiddler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fiddler 面板功能详解</title>
+    <link href="http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/"/>
+    <id>http://RainNenya.github.io/2019/08/30/fiddler-mian-ban-gong-neng-xiang-jie/</id>
+    <published>2019-08-30T13:01:37.000Z</published>
+    <updated>2019-09-23T15:07:24.325Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/RainNenya/PictureBed/master/img/Any Browser.png&quot; alt=&quot;任何浏览器&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img
         
       
